@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.card{
+  margin: 100px auto;
+  width: 350px;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.background-img{
+  border-radius: 10px;
+  width: 350px;
+  height: 500px;
+  background-size: 400px;
+  transition: all 1s ease;
+}
+.background-img:hover{
+  background-position:left center ;
+  background-size: 600px;
+}
+.icons-hover{
+  top: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.bx{
+  font-size: 40px;
+}
+.title-man{
+  color: #fff;
+  margin-left: 20px;
+}
+.card-inside{
+  opacity: 0;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 340px;
+  height: 490px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+.card:hover{
+  transition: all 1s ease-in;
+  background-size: 600px;
+
+}
+.card:hover .card-inside{
+  opacity: 1;
+  transition: all 0.4s ease;
+}
+.second-card{
+  background-image: url('../images/muzeydagi-tun-qahramoni.jpg');
+}
+.third-card{
+  background-image: url('../images/pexels-aadil-1961183.jpg');
+}
+.first-card{
+  background-image: url('../images/al-pacino.jpg');
+}
